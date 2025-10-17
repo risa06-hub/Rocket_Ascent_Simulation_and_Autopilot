@@ -34,8 +34,8 @@ rocket_simulation_system
 -main_simulation.py # Entry point for running the full simulation
 -rocket_dynamics.py # Aerodynamics and physics modeling
 -sensor_simulator.py # GPS, IMU, and gyroscope sensor models
-- state_estimator.py # Kalman Filter implementation for sensor fusion
-- autopilot.py # Guidance and control algorithms
+-state_estimator.py # Kalman Filter implementation for sensor fusion
+-autopilot.py # Guidance and control algorithms
 -tvc_controller.py # Thrust Vector Control system
 -config.py # Global constants and configurable parameters
 -analysis.py # Data analysis and visualization scripts
@@ -45,16 +45,30 @@ rocket_simulation_system
 - conatains the constants and parameters which are used throughout the project
 
 ### rocket_dynamics.py
--Atmosphere model
--- used ISA model, where:
-Inline: $E = mc^2$
 
-Block:
+#### Atmospheric Model
+
+The temperature decreases linearly in the troposphere:
+
+$$
+T = T_0 - L h
+$$
+
+The pressure is calculated as:
 
 $$
 p = p_0 \left(\frac{T}{T_0}\right)^{\frac{g}{R L}}
 $$
 
+where:
+
+| Symbol | Description | Units |
+|:--|:--|:--:|
+| $T_0$ | Sea-level temperature | K |
+| $p_0$ | Sea-level pressure | Pa |
+| $L$ | Temperature lapse rate | K/m |
+| $g$ | Gravitational acceleration | m/s² |
+| $R$ | Specific gas constant | J/(kg·K) |
 
 
 
