@@ -78,6 +78,7 @@ where:
 
 Starting from the **ideal gas law** and **hydrostatic equilibrium**:
 
+$$
 1. **Ideal gas law:**  
 \[
 P = \rho R T
@@ -109,7 +110,7 @@ P = \rho R T
 \quad \Rightarrow \quad
 P(h) = P_0 \left( \frac{T(h)}{T_0} \right)^{\frac{g}{R L}}
 \]
-
+$$
 ---
 
 
