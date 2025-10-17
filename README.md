@@ -40,8 +40,8 @@ rocket_simulation_system
 -config.py # Global constants and configurable parameters
 -analysis.py # Data analysis and visualization scripts
 
-### config.py
-
+### Config.py
+---
 - conatains the constants and parameters which are used throughout the project
 
 ### rocket_dynamics.py
