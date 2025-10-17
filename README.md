@@ -45,9 +45,9 @@ rocket_simulation_system
 - Contains the constants and parameters which are used throughout the project
 
 
-### rocket_dynamics.py
+<h3 style="text-decoration: underline;">rocket_dynamics.py</h3>  
 
-#### Atmosphere model
+- Atmosphere model
 
 The temperature decreases linearly in the troposphere:
 
@@ -70,6 +70,16 @@ where:
 | $L$ | Temperature lapse rate | K/m |
 | $g$ | Gravitational acceleration | m/s² |
 | $R$ | Specific gas constant | J/(kg·K) |
-
+-derivation 
+$$
+P= rho * R * T
+dP= -rho(h) * g * dh
+dP= -P/R*T(h) * g *dh
+dP/P= -g/R*T(h) * dh
+we know, T(h)=T_0 - L*h
+so,
+dP/P= -g/(R*(T_0 -L*h)) *dh 
+integrate:
+p = p_0 \left(\frac{T}{T_0}\right)^{\frac{g}{R L}}
 
 
