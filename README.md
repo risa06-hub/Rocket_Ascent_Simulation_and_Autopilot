@@ -30,16 +30,15 @@ It also provides data analysis and visualization tools for post-simulation evalu
 ---
 
 ## 🧠 Project Structure
-rocket_simulation_system/
-│
-├── main_simulation.py # Entry point for running the full simulation
-├── rocket_dynamics.py # Aerodynamics and physics modeling
-├── sensor_simulator.py # GPS, IMU, and gyroscope sensor models
-├── state_estimator.py # Kalman Filter implementation for sensor fusion
-├── autopilot.py # Guidance and control algorithms
-├── tvc_controller.py # Thrust Vector Control system
-├── config.py # Global constants and configurable parameters
-└── analysis.py # Data analysis and visualization scripts
+rocket_simulation_system
+-main_simulation.py # Entry point for running the full simulation
+-rocket_dynamics.py # Aerodynamics and physics modeling
+-sensor_simulator.py # GPS, IMU, and gyroscope sensor models
+- state_estimator.py # Kalman Filter implementation for sensor fusion
+- autopilot.py # Guidance and control algorithms
+-tvc_controller.py # Thrust Vector Control system
+-config.py # Global constants and configurable parameters
+-analysis.py # Data analysis and visualization scripts
 
 ### config.py
 
@@ -48,9 +47,14 @@ rocket_simulation_system/
 ### rocket_dynamics.py
 -Atmosphere model
 -- used ISA model, where:
-1. for altitude,h<11000m, $$
-p = p_0 \exp\left(-\frac{g (z - z_0)}{R T}\right)
+Inline: $E = mc^2$
+
+Block:
+
 $$
+p = p_0 \left(\frac{T}{T_0}\right)^{\frac{g}{R L}}
+$$
+
 
 
 
