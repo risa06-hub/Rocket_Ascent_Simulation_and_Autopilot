@@ -40,13 +40,14 @@ rocket_simulation_system
 -config.py # Global constants and configurable parameters
 -analysis.py # Data analysis and visualization scripts
 
-### Config.py
----
-- conatains the constants and parameters which are used throughout the project
+<h3 style="text-decoration: underline;">Config.py</h3>
+
+- Contains the constants and parameters which are used throughout the project
+
 
 ### rocket_dynamics.py
 
-#### Atmospheric Model
+#### Atmosphere model
 
 The temperature decreases linearly in the troposphere:
 
