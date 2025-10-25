@@ -74,43 +74,6 @@ where:
 
 ---
 
-### Derivation
-
-Starting from the **ideal gas law** and **hydrostatic equilibrium**:
-
-$$
-1. **Ideal gas law:**  
-\[
-P = \rho R T
-\]
-
-2. **Hydrostatic equation:**  
-\[
-\frac{dP}{dh} = - \rho(h) g
-\]
-
-3. Substitute \(\rho = P / (R T(h))\):  
-\[
-\frac{dP}{dh} = - \frac{P}{R T(h)} g \quad \Rightarrow \quad \frac{dP}{P} = - \frac{g}{R T(h)} dh
-\]
-
-4. Substitute the linear temperature profile \(T(h) = T_0 - L h\):  
-\[
-\frac{dP}{P} = - \frac{g}{R (T_0 - L h)} dh
-\]
-
-5. Integrate both sides:  
-\[
-\int_{P_0}^{P(h)} \frac{dP'}{P'} = - \frac{g}{R} \int_0^h \frac{dh'}{T_0 - L h'}
-\]
-
-6. Solve the integral:  
-\[
-\ln \frac{P(h)}{P_0} = \frac{g}{R L} \ln \frac{T(h)}{T_0} 
-\quad \Rightarrow \quad
-P(h) = P_0 \left( \frac{T(h)}{T_0} \right)^{\frac{g}{R L}}
-\]
-$$
 ---
 
 
