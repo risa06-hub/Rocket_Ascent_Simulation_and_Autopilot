@@ -1,4 +1,4 @@
-# 🚀 Rocket Ascent Simulation and Autopilot
+# Rocket Ascent Simulation and Autopilot
 
 ## Overview
 **Rocket_Ascent_Simulation_and_Autopilot** is a personal project focused on the **numerical modeling** and **control simulation** of a launch vehicle during its ascent phase.  
@@ -8,37 +8,31 @@ It also provides data analysis and visualization tools for post-simulation evalu
 
 ---
 
-## ✨ Key Features
-- **🚀 Rocket Dynamics Simulation:**  
+## Key Features
+- **Rocket Dynamics Simulation:**  
   Models complete aerodynamics, physics, and environmental interactions during ascent.
 
-- **📡 Sensor Simulation:**  
+- **Sensor Simulation:**  
   Includes realistic GPS, IMU, and gyroscope models for onboard measurement emulation.
 
-- **🧠 State Estimation:**  
-  Utilizes a **Kalman Filter** for accurate sensor fusion and real-time state estimation.
+- **Controllers**  
+  Use PD, LQG and hybrid controllers for the control system of rocket 
 
-- **🕹️ Autopilot & Guidance Control:**  
-  Implements closed-loop control algorithms for attitude stabilization and trajectory guidance.
-
-- **🎯 Thrust Vector Control (TVC):**  
+- **Thrust Vector Control (TVC):**  
   Simulates actuator control for thrust direction adjustments and pitch/yaw control.
 
-- **📊 Data Analysis & Visualization:**  
+- **Data Analysis & Visualization:**  
   Provides post-simulation analysis and visual representation of key flight parameters.
 
 ---
 
 ## 🧠 Project Structure
 rocket_simulation_system
--main_simulation.py # Entry point for running the full simulation
+-main_simulation.py # Entry point for running the full simulation and Data analysis and visualization scripts
 -rocket_dynamics.py # Aerodynamics and physics modeling
 -sensor_simulator.py # GPS, IMU, and gyroscope sensor models
--state_estimator.py # Kalman Filter implementation for sensor fusion
--autopilot.py # Guidance and control algorithms
--tvc_controller.py # Thrust Vector Control system
+-Controller: lqg_controller.py,pd_controller.py,hybrid_controller.py,base_controller.py #control system
 -config.py # Global constants and configurable parameters
--analysis.py # Data analysis and visualization scripts
 
 <h3 style="text-decoration: underline;">Config.py</h3>
 
