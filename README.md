@@ -26,7 +26,7 @@ It also provides data analysis and visualization tools for post-simulation evalu
 
 ---
 
-## 🧠 Project Structure
+## Project Structure
 rocket_simulation_system
 -main_simulation.py # Entry point for running the full simulation and Data analysis and visualization scripts
 -rocket_dynamics.py # Aerodynamics and physics modeling
@@ -56,19 +56,6 @@ $$
 p(h) = p_0 \left( \frac{T(h)}{T_0} \right)^{\frac{g}{R L}}
 $$
 
-where:
-
-| Symbol | Description | Units |
-|:--|:--|:--:|
-| $T_0$ | Sea-level temperature | K |
-| $p_0$ | Sea-level pressure | Pa |
-| $L$ | Temperature lapse rate | K/m |
-| $g$ | Gravitational acceleration | m/s² |
-| $R$ | Specific gas constant | J/(kg·K) |
-
----
-
----
 
 
 
